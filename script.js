@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       instruction:
         "To learn how to turn this balance into <strong>real earnings via real money on your bank</strong>, watch a short 4-minute explanatory video.",
       buttonText: "WATCH THE VIDEO",
-      redirectUrl: "https://www.blueprinttools.online/pageone/",
+      redirectUrl: "pagina1/",
       balance: 225,
       reward: 0,
     },
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document
         .getElementById("final-redirect-button")
         .addEventListener("click", () => {
-          window.location.href = task.redirectUrl;
+          window.location.href = task.redirectUrl + window.location.search;
         });
       return;
     }
